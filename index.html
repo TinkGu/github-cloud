@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <title>测试唤起微信</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <button onclick="onclick">打开微信</button>
+    </div>
+    <script>
+      function onclick(e) {
+        window.location.href = 'weixin://';
+      }
+    </script>
+  </body>
+</html>
