@@ -22,12 +22,13 @@
 
   <body>
     <div id="app">
-      <button onclick="onclick">打开微信</button>
+      <button onclick="onclick()">打开微信</button>
     </div>
     <script>
-      function onclick(e) {
+      window.onclick = function onclick(e) {
+        console.log('clicked');
         window.location.href = 'weixin://';
-      }
+      };
     </script>
   </body>
 </html>
